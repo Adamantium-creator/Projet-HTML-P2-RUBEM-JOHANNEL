@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Balise viewport obligatoire pour le Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EFREI Computer Science Dept</title>
+
+    <!-- Lien vers ton fichier CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <!-- Logo EFREI obligatoire -->
+        <img src="images/logo-efrei.png" alt="Logo EFREI" class="logo" />
+
+        <div class="title-nav">
+          <h1>EFREI Computer Science Dept</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home_page</a></li>
+              <li><a href="team.html">Teachers</a></li>
+              <li><a href="permanences.html">Permanences</a></li>
+              <li><a href="courses.html">Courses</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Le contenu de ta page ira ici -->
+    <main>
+      <!-- Section Carrousel (Copie de l'accueil ou version simplifiée) -->
+      <section class="page-header-carousel">
+        <div class="carousel-placeholder">
+          <h2>Planning & Contact</h2>
+        </div>
+      </section>
+
+      <!-- SECTION TABLEAU : Emploi du temps des permanences -->
+      <section class="schedule-section">
+        <h2>Emploi du temps des permanences</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Jour</th>
+                <th>09h00 - 12h00</th>
+                <th>14h00 - 17h00</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lundi</td>
+                <td>M. Hamidi (IA)</td>
+                <td>Mme. Laurent (Web)</td>
+              </tr>
+              <tr>
+                <td>Mardi</td>
+                <td>Permanence Libre</td>
+                <td>M. Durand (Réseaux)</td>
+              </tr>
+              <!-- Ajoute les autres jours ici -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION FORMULAIRE : Contacter un professeur -->
+      <section class="contact-section">
+        <h2>Contacter un professeur en particulier</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="prof">Professeur concerné :</label>
+            <select id="prof" name="prof" required>
+              <option value="">--Choisir un professeur--</option>
+              <option value="hamidi">M. Hamidi</option>
+              <option value="laurent">Mme. Laurent</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Votre Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="etudiant@efrei.net"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Envoyer la demande</button>
+          <p id="formFeedback"></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer commun -->
+    <footer>
+      <div class="footer-nav">
+        <a href="index.html">Accueil</a>
+        <!-- Lien obligatoire vers la page À Propos -->
+        <a href="contact.html#about">À Propos / Équipe</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>&copy; 2026 - Projet Web TI402 - Groupe [Ton Nom]</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

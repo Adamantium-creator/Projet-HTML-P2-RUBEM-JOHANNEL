@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Balise viewport obligatoire pour le Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EFREI Computer Science Dept</title>
+
+    <!-- Lien vers ton fichier CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <!-- Logo EFREI obligatoire -->
+        <img src="images/logo-efrei.png" alt="Logo EFREI" class="logo" />
+
+        <div class="title-nav">
+          <h1>EFREI Computer Science Dept</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home_page</a></li>
+              <li><a href="team.html">Teachers</a></li>
+              <li><a href="permanences.html">Permanences</a></li>
+              <li><a href="courses.html">Courses</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Le contenu de ta page ira ici -->
+
+    <main>
+      <!-- SECTION 1 : CARROUSEL -->
+      <!-- C'est l'élément central de ton mockup pour l'accueil -->
+      <section id="hero-carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img src="images/efrei-campus.jpg" alt="Campus de l'EFREI Paris" />
+            <div class="carousel-text">
+              <h2>Bienvenue au Département Informatique</h2>
+              <p>L'excellence numérique au cœur de Paris Panthéon-Assas.</p>
+            </div>
+          </div>
+          <!-- Tu pourras ajouter d'autres "carousel-slide" ici plus tard -->
+        </div>
+
+        <!-- Boutons de navigation du carrousel pour l'interactivité JS -->
+        <div class="carousel-controls">
+          <button id="prevBtn" aria-label="Précédent">&#10094;</button>
+          <button id="nextBtn" aria-label="Suivant">&#10095;</button>
+        </div>
+      </section>
+
+      <!-- SECTION 2 : ACTUALITÉS -->
+      <!-- Cette section contient les 3 articles de ton mockup -->
+      <section class="news-container">
+        <h2 class="section-title">Actualités du Département</h2>
+
+        <div class="articles-grid">
+          <!-- Article 1 -->
+          <article class="news-card">
+            <div class="card-image-placeholder">
+              <img src="images/news1.jpg" alt="Description actu 1" />
+            </div>
+            <div class="card-content">
+              <h3>Ouverture du nouveau Labo IA</h3>
+              <p>
+                Découvrez les nouveaux équipements mis à disposition des
+                étudiants de l'EFREI pour leurs projets de recherche.
+              </p>
+              <a href="#" class="read-more">Lire la suite</a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="news-card">
+            <div class="card-image-placeholder">
+              <img src="images/news2.jpg" alt="Description actu 2" />
+            </div>
+            <div class="card-content">
+              <h3>Hackathon TI402</h3>
+              <p>
+                Retour sur la compétition intense de développement web qui a eu
+                lieu la semaine dernière sur le campus.
+              </p>
+              <a href="#" class="read-more">Lire la suite</a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="news-card">
+            <div class="card-image-placeholder">
+              <img src="images/news3.jpg" alt="Description actu 3" />
+            </div>
+            <div class="card-content">
+              <h3>Conférence Cybersécurité</h3>
+              <p>
+                Nos experts interviennent sur les nouveaux enjeux de la sécurité
+                numérique et de la protection des données.
+              </p>
+              <a href="#" class="read-more">Lire la suite</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer commun -->
+    <footer>
+      <div class="footer-nav">
+        <a href="index.html">Accueil</a>
+        <!-- Lien obligatoire vers la page À Propos -->
+        <a href="contact.html#about">À Propos / Équipe</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>&copy; 2026 - Projet Web TI402 - Groupe [Ton Nom]</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

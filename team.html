@@ -1,50 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- Balise viewport obligatoire pour le Responsive Design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EFREI Computer Science Dept</title>
-    
+
     <!-- Lien vers ton fichier CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <header>
-        <div class="header-container">
-            <!-- Logo EFREI obligatoire -->
-            <img src="images/logo-efrei.png" alt="Logo EFREI" class="logo">
-        
-            <div class="title-nav">
-                <h1>EFREI Computer Science Dept</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home_page</a></li>
-                        <li><a href="team.html">Teachers</a></li>
-                        <li><a href="permanences.html">Permanences</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="header-container">
+        <!-- Logo EFREI obligatoire -->
+        <img src="images/logo-efrei.png" alt="Logo EFREI" class="logo" />
+
+        <div class="title-nav">
+          <h1>EFREI Computer Science Dept</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home_page</a></li>
+              <li><a href="team.html">Teachers</a></li>
+              <li><a href="permanences.html">Permanences</a></li>
+              <li><a href="courses.html">Courses</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
 
-<!-- Le contenu de ta page ira ici -->
-    <main>
-    
+    <!-- Le contenu de ta page ira ici -->
 
+    <main class="faculty-page">
+      <aside class="filters-sidebar">
+        <h3>Filter by specialty</h3>
+        <ul id="filter-list">
+          <li>
+            <button class="filter-btn active" data-filter="all">
+              All Specialties
+            </button>
+          </li>
+          <li>
+            <button class="filter-btn" data-filter="web">
+              Web Development
+            </button>
+          </li>
+          <li>
+            <button class="filter-btn" data-filter="ai">
+              Artificial Intelligence
+            </button>
+          </li>
+          <li>
+            <button class="filter-btn" data-filter="cyber">
+              Cybersecurity
+            </button>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="faculty-grid" id="faculty-grid">
+        <article class="prof-card" data-category="web">
+          <div class="prof-img"></div>
+          <h3>Mohamed Hamidi</h3>
+          <p class="specialty">Web Development</p>
+          <p>Module leader for TI402 Project.</p>
+        </article>
+
+        <article class="prof-card" data-category="ai">
+          <div class="prof-img"></div>
+          <h3>Sarah Connor</h3>
+          <p class="specialty">Artificial Intelligence</p>
+          <p>Specialist in Neural Networks and Machine Learning.</p>
+        </article>
+
+        <article class="prof-card" data-category="cyber">
+          <div class="prof-img"></div>
+          <h3>Alan Turing</h3>
+          <p class="specialty">Cybersecurity</p>
+          <p>Expert in Cryptography and Systems Security.</p>
+        </article>
+
+        <article class="prof-card" data-category="web">
+          <div class="prof-img"></div>
+          <h3>Ada Lovelace</h3>
+          <p class="specialty">Web Development</p>
+          <p>Fullstack Engineer and Algorithm specialist.</p>
+        </article>
+      </section>
     </main>
 
-<!-- Footer commun -->
+    <!-- Footer commun -->
     <footer>
-        <div class="footer-nav">
-            <a href="index.html">Accueil</a>
+      <div class="footer-nav">
+        <a href="index.html">Home_page</a>
         <!-- Lien obligatoire vers la page À Propos -->
-            <a href="contact.html#about">À Propos / Équipe</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <p>&copy; 2026 - Projet Web TI402 - Groupe [Ton Nom]</p>
+        <a href="contact.html#about">About us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>&copy; 2026 - Projet Web TI402 - Groupe Johannel-Rubem</p>
     </footer>
-    <script src = "script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

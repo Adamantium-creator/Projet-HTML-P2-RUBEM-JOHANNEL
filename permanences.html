@@ -1,147 +1,188 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Permanences - EFREI Computer Science Dept</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Permanences - EFREI Computer Science Dept</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img src="images/logo-efrei.png" alt="Logo EFREI" class="logo" />
 
-<body>
-  <header>
-    <div class="header-container">
-      <img src="images/logo-efrei.png" alt="Logo EFREI" class="logo" />
+        <div class="title-nav">
+          <h1>EFREI Computer Science Dept</h1>
 
-      <div class="title-nav">
-        <h1>EFREI Computer Science Dept</h1>
-
-        <nav>
-          <ul>
-            <li><a href="index.html">Home_page</a></li>
-            <li><a href="team.html">Teachers</a></li>
-            <li><a href="permanences.html">Permanences</a></li>
-            <li><a href="courses.html">Courses</a></li>
-          </ul>
-        </nav>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home_page</a></li>
+              <li><a href="team.html">Teachers</a></li>
+              <li><a href="permanences.html">Permanences</a></li>
+              <li><a href="courses.html">Courses</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <!-- INTRO -->
-    <section class="page-intro">
-      <h2>Teachers Permanences</h2>
-
-      <p>
-        Students can meet teachers during permanences to ask questions,
-        receive academic support and discuss projects or coursework.
-      </p>
-    </section>
-
-    <!-- TABLE -->
-    <section class="program-table-section">
-      <h2>Weekly Schedule</h2>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Teacher</th>
-            <th>Specialty</th>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Room</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Mohamed Hamidi</td>
-            <td>Web Development</td>
-            <td>Monday</td>
-            <td>10:00 - 12:00</td>
-            <td>B204</td>
-          </tr>
-
-          <tr>
-            <td>Sarah Connor</td>
-            <td>Artificial Intelligence</td>
-            <td>Tuesday</td>
-            <td>14:00 - 16:00</td>
-            <td>C112</td>
-          </tr>
-
-          <tr>
-            <td>Alan Turing</td>
-            <td>Cybersecurity</td>
-            <td>Wednesday</td>
-            <td>09:00 - 11:00</td>
-            <td>A310</td>
-          </tr>
-
-          <tr>
-            <td>Ada Lovelace</td>
-            <td>Web Development</td>
-            <td>Thursday</td>
-            <td>13:00 - 15:00</td>
-            <td>D210</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- FORM -->
-    <section class="contact-section">
-      <h2>Contact a Teacher</h2>
-
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" required />
+    <main>
+      <section id="hero-carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img src="images/campus1.jpg" alt="EFREI Campus" />
+            <div class="carousel-text">
+              <h2>Welcome to the IT Department</h2>
+              <p>
+                Digital excellence at the heart of Efrei Paris Panthéon-Assas.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/campus2.jpg" alt="Student Life" />
+            <div class="carousel-text">
+              <h2>Innovation & Research</h2>
+              <p>Discover our state-of-the-art laboratories.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/campus3.jpg" alt="International" />
+            <div class="carousel-text">
+              <h2>International Focus</h2>
+              <p>Preparing engineers for a global career.</p>
+            </div>
+          </div>
         </div>
-
-        <div class="form-group">
-          <label for="email">EFREI Email</label>
-          <input type="email" id="email" placeholder="example@efrei.net" required />
+        <div class="carousel-controls">
+          <button id="prevBtn" aria-label="Previous">&#10094;</button>
+          <button id="nextBtn" aria-label="Next">&#10095;</button>
         </div>
+      </section>
+      <!-- INTRO -->
+      <section class="page-intro">
+        <h2>Teachers Permanences</h2>
 
-        <div class="form-group">
-          <label for="teacher">Teacher</label>
+        <p>
+          Students can meet teachers during permanences to ask questions,
+          receive academic support and discuss projects or coursework.
+        </p>
+      </section>
 
-          <select id="teacher" required>
-            <option value="">Select a teacher</option>
-            <option>Mohamed Hamidi</option>
-            <option>Sarah Connor</option>
-            <option>Alan Turing</option>
-            <option>Ada Lovelace</option>
-          </select>
-        </div>
+      <!-- TABLE -->
+      <section class="program-table-section">
+        <h2>Weekly Schedule</h2>
 
-        <div class="form-group">
-          <label for="message">Message</label>
+        <table>
+          <thead>
+            <tr>
+              <th>Teacher</th>
+              <th>Specialty</th>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Room</th>
+            </tr>
+          </thead>
 
-          <textarea maxlength="500" id="message" rows="5" placeholder="Write your message..." required> </textarea>
-        </div>
+          <tbody>
+            <tr>
+              <td>Mohamed Hamidi</td>
+              <td>Web Development</td>
+              <td>Monday</td>
+              <td>10:00 - 12:00</td>
+              <td>B204</td>
+            </tr>
 
-        <button type="submit">Send Message</button>
+            <tr>
+              <td>Sarah Connor</td>
+              <td>Artificial Intelligence</td>
+              <td>Tuesday</td>
+              <td>14:00 - 16:00</td>
+              <td>C112</td>
+            </tr>
 
-        <p id="formFeedback"></p>
-      </form>
-    </section>
-  </main>
+            <tr>
+              <td>Alan Turing</td>
+              <td>Cybersecurity</td>
+              <td>Wednesday</td>
+              <td>09:00 - 11:00</td>
+              <td>A310</td>
+            </tr>
 
-  <footer>
-    <div class="footer-nav">
-      <a href="index.html">Accueil</a>
-      <a href="contact.html#about">À Propos / Équipe</a>
-      <a href="contact.html">Contact</a>
-    </div>
+            <tr>
+              <td>Ada Lovelace</td>
+              <td>Web Development</td>
+              <td>Thursday</td>
+              <td>13:00 - 15:00</td>
+              <td>D210</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <p>&copy; 2026 - Projet Web TI402 - Groupe Johannel-Rubem</p>
-  </footer>
+      <!-- FORM -->
+      <section class="contact-section">
+        <h2>Contact a Teacher</h2>
 
-  <script src="script.js"></script>
-</body>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
+          </div>
 
+          <div class="form-group">
+            <label for="email">EFREI Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@efrei.net"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="teacher">Teacher</label>
+
+            <select id="teacher" required>
+              <option value="">Select a teacher</option>
+              <option>Mohamed Hamidi</option>
+              <option>Sarah Connor</option>
+              <option>Alan Turing</option>
+              <option>Ada Lovelace</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+
+            <textarea
+              maxlength="500"
+              id="message"
+              rows="5"
+              placeholder="Write your message..."
+              required
+            >
+            </textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+
+          <p id="formFeedback"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-nav">
+        <a href="index.html">Accueil</a>
+        <a href="contact.html#about">À Propos / Équipe</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p>&copy; 2026 - Projet Web TI402 - Groupe Johannel-Rubem</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,27 +1,22 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Balise viewport obligatoire pour le Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EFREI Computer Science Dept</title>
-
-    <!-- Lien vers ton fichier CSS -->
+    <title>EFREI Computer Science Dept - Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <div class="header-container">
-        <!-- Logo EFREI obligatoire -->
-        <img src="images/logo-efrei.png" alt="Logo EFREI" class="logo" />
-
+        <img src="images/logo-efrei.png" alt="EFREI Logo" class="logo" />
         <div class="title-nav">
           <h1>EFREI Computer Science Dept</h1>
           <nav>
             <ul>
-              <li><a href="index.html">Home_page</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="team.html">Teachers</a></li>
-              <li><a href="permanences.html">Permanences</a></li>
+              <li><a href="permanences.html">Schedules</a></li>
               <li><a href="courses.html">Courses</a></li>
             </ul>
           </nav>
@@ -29,81 +24,83 @@
       </div>
     </header>
 
-    <!-- Le contenu de ta page ira ici -->
-
     <main>
-        <section id="hero-carousel">
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="images/campus1.jpg" alt="EFREI Campus">
-                    <div class="carousel-text">
-                        <h2>Welcome to the IT Department</h2>
-                        <p>Digital excellence at the heart of Paris Panthéon-Assas.</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="images/campus2.jpg" alt="Student Life">
-                    <div class="carousel-text">
-                        <h2>Innovation & Research</h2>
-                        <p>Discover our state-of-the-art laboratories.</p>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="images/campus3.jpg" alt="International">
-                    <div class="carousel-text">
-                        <h2>International Focus</h2>
-                        <p>Preparing engineers for a global career.</p>
-                    </div>
-                </div>
+      <section id="hero-carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img src="images/campus1.jpg" alt="EFREI Campus" />
+            <div class="carousel-text">
+              <h2>Welcome to the IT Department</h2>
+              <p>Digital excellence at the heart of Paris Panthéon-Assas.</p>
             </div>
-            <div class="carousel-controls">
-                <button id="prevBtn" aria-label="Previous">&#10094;</button>
-                <button id="nextBtn" aria-label="Next">&#10095;</button>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/campus2.jpg" alt="Student Life" />
+            <div class="carousel-text">
+              <h2>Innovation & Research</h2>
+              <p>Discover our state-of-the-art laboratories.</p>
             </div>
-        </section>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/campus3.jpg" alt="International" />
+            <div class="carousel-text">
+              <h2>International Focus</h2>
+              <p>Preparing engineers for a global career.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button id="prevBtn" aria-label="Previous">&#10094;</button>
+          <button id="nextBtn" aria-label="Next">&#10095;</button>
+        </div>
+      </section>
 
-      <!-- SECTION 2 : ACTUALITÉS -->
-      <!-- Cette section contient les 3 articles de ton mockup -->
-      <section class="news-container">
-            <h2 class="section-title">Latest News</h2>
-            <div class="articles-grid">
-                <article class="news-card">
-                    <div class="card-image-placeholder"><img src="images/news1.jpg" alt="AI Lab"></div>
-                    <div class="card-content">
-                        <h3>New AI Lab Opening</h3>
-                        <p>Discover the new high-tech equipment available for students to boost their research projects.</p>
-                        <a href="#" class="read-more">Read more</a>
-                    </div>
-                </article>
-                <article class="news-card">
-                    <div class="card-image-placeholder"><img src="images/news2.jpg" alt="Hackathon"></div>
-                    <div class="card-content">
-                        <h3>TI402 Hackathon</h3>
-                        <p>A look back at the intense web development competition held last week on campus.</p>
-                        <a href="#" class="read-more">Read more</a>
-                    </div>
-                </article>
-                <article class="news-card">
-                    <div class="card-image-placeholder"><img src="images/news3.jpg" alt="Cybersecurity"></div>
-                    <div class="card-content">
-                        <h3>Cybersecurity Conference</h3>
-                        <p>Experts discuss new digital security challenges and data protection strategies.</p>
-                        <a href="#" class="read-more">Read more</a>
-                    </div>
-                </article>
+      <section class="news-container" style="max-width: 1400px; margin: 40px auto; padding: 0 20px;">
+        <h2 style="color: #003366; text-align: center; margin-bottom: 30px; text-transform: uppercase;">Latest News</h2>
+        <div class="articles-grid">
+          <article class="news-card">
+            <div class="card-image-placeholder">
+              <img src="images/news1.jpg" alt="AI Lab" style="width:100%; height:200px; object-fit:cover;" />
             </div>
-        </section>
+            <div class="card-content" style="padding: 20px;">
+              <h3 style="color: #003366;">New AI Lab Opening</h3>
+              <p>Discover the new high-tech equipment available for students to boost their research projects.</p>
+              <a href="#" style="color: #003366; font-weight: bold; text-decoration: none;">Read more →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="card-image-placeholder">
+              <img src="images/news2.jpg" alt="Hackathon" style="width:100%; height:200px; object-fit:cover;" />
+            </div>
+            <div class="card-content" style="padding: 20px;">
+              <h3 style="color: #003366;">TI402 Hackathon</h3>
+              <p>A look back at the intense web development competition held last week on our campus.</p>
+              <a href="#" style="color: #003366; font-weight: bold; text-decoration: none;">Read more →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="card-image-placeholder">
+              <img src="images/news3.jpg" alt="Cybersecurity" style="width:100%; height:200px; object-fit:cover;" />
+            </div>
+            <div class="card-content" style="padding: 20px;">
+              <h3 style="color: #003366;">Cybersecurity Conference</h3>
+              <p>Experts discuss new digital security challenges and modern data protection strategies.</p>
+              <a href="#" style="color: #003366; font-weight: bold; text-decoration: none;">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer commun -->
     <footer>
-      <div class="footer-nav">
-        <a href="index.html">Accueil</a>
-        <!-- Lien obligatoire vers la page À Propos -->
-        <a href="contact.html#about">À Propos / Équipe</a>
-        <a href="contact.html">Contact</a>
+      <div class="footer-nav" style="margin-bottom: 10px;">
+        <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Home</a>
+        <a href="team.html" style="color: white; margin: 0 10px; text-decoration: none;">About us</a>
+        <a href="permanences.html" style="color: white; margin: 0 10px; text-decoration: none;">Contact</a>
       </div>
-      <p>&copy; 2026 - Projet Web TI402 - Groupe [Ton Nom]</p>
+      <p>&copy; 2026 - Projet Web TI402 - Group Johannel-Rubem</p>
     </footer>
     <script src="script.js"></script>
   </body>

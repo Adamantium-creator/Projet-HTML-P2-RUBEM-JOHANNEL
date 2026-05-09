@@ -360,6 +360,10 @@ footer {
   background-color: #f2f6fb;
 }
 
+textarea {
+  resize: none;
+}
+
 /* --- 7. RESPONSIVE DESIGN --- */
 @media screen and (max-width: 900px) {
   .faculty-page {

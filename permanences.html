@@ -1,92 +1,147 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Balise viewport obligatoire pour le Responsive Design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EFREI Computer Science Dept</title>
 
-    <!-- Lien vers ton fichier CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header-container">
-        <!-- Logo EFREI obligatoire -->
-        <img src="images/logo-efrei.png" alt="Logo EFREI" class="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Permanences - EFREI Computer Science Dept</title>
 
-        <div class="title-nav">
-          <h1>EFREI Computer Science Dept</h1>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home_page</a></li>
-              <li><a href="team.html">Teachers</a></li>
-              <li><a href="permanences.html">Permanences</a></li>
-              <li><a href="courses.html">Courses</a></li>
-            </ul>
-          </nav>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/logo-efrei.png" alt="Logo EFREI" class="logo" />
+
+      <div class="title-nav">
+        <h1>EFREI Computer Science Dept</h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home_page</a></li>
+            <li><a href="team.html">Teachers</a></li>
+            <li><a href="permanences.html">Permanences</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- INTRO -->
+    <section class="page-intro">
+      <h2>Teachers Permanences</h2>
+
+      <p>
+        Students can meet teachers during permanences to ask questions,
+        receive academic support and discuss projects or coursework.
+      </p>
+    </section>
+
+    <!-- TABLE -->
+    <section class="program-table-section">
+      <h2>Weekly Schedule</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Teacher</th>
+            <th>Specialty</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Room</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Mohamed Hamidi</td>
+            <td>Web Development</td>
+            <td>Monday</td>
+            <td>10:00 - 12:00</td>
+            <td>B204</td>
+          </tr>
+
+          <tr>
+            <td>Sarah Connor</td>
+            <td>Artificial Intelligence</td>
+            <td>Tuesday</td>
+            <td>14:00 - 16:00</td>
+            <td>C112</td>
+          </tr>
+
+          <tr>
+            <td>Alan Turing</td>
+            <td>Cybersecurity</td>
+            <td>Wednesday</td>
+            <td>09:00 - 11:00</td>
+            <td>A310</td>
+          </tr>
+
+          <tr>
+            <td>Ada Lovelace</td>
+            <td>Web Development</td>
+            <td>Thursday</td>
+            <td>13:00 - 15:00</td>
+            <td>D210</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FORM -->
+    <section class="contact-section">
+      <h2>Contact a Teacher</h2>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required />
         </div>
-      </div>
-    </header>
 
-    <!-- Le contenu de ta page ira ici -->
-    <main style="max-width: 1200px; margin: 0 auto; padding: 20px;">
-        <section class="schedule-section">
-            <h2 style="color:#003366; text-align:center;">Office Hours Schedule</h2>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>09:00 AM - 12:00 PM</th>
-                            <th>02:00 PM - 05:00 PM</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday</td>
-                            <td>M. Hamidi (Web)</td>
-                            <td>Faculty Meeting</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <div class="form-group">
+          <label for="email">EFREI Email</label>
+          <input type="email" id="email" placeholder="example@efrei.net" required />
+        </div>
 
-        <section class="contact-section">
-            <h2 style="color:#003366; text-align:center;">Contact a Professor</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="prof">Professor:</label>
-                    <select id="prof" required>
-                        <option value="">-- Select --</option>
-                        <option value="hamidi">M. Hamidi</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="email">Your EFREI Email:</label>
-                    <input type="email" id="email" placeholder="student@efrei.net" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-                <p id="formFeedback"></p>
-            </form>
-        </section>
-    </main>
+        <div class="form-group">
+          <label for="teacher">Teacher</label>
 
-    <!-- Footer commun -->
-    <footer>
-      <div class="footer-nav">
-        <a href="index.html">Accueil</a>
-        <!-- Lien obligatoire vers la page À Propos -->
-        <a href="contact.html#about">À Propos / Équipe</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <p>&copy; 2026 - Projet Web TI402 - Groupe [Ton Nom]</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+          <select id="teacher" required>
+            <option value="">Select a teacher</option>
+            <option>Mohamed Hamidi</option>
+            <option>Sarah Connor</option>
+            <option>Alan Turing</option>
+            <option>Ada Lovelace</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+
+          <textarea maxlength="50" id="message" rows="5" placeholder="Write your message..." required> </textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+        <p id="formFeedback"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Accueil</a>
+      <a href="contact.html#about">À Propos / Équipe</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p>&copy; 2026 - Projet Web TI402 - Groupe Johannel-Rubem</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

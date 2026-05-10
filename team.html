@@ -1,140 +1,311 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Balise viewport obligatoire pour le Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EFREI Computer Science Dept</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- Balise viewport obligatoire pour le Responsive Design -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EFREI Computer Science Dept</title>
+    <!-- Lien vers ton fichier CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!-- Lien vers ton fichier CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-    <div class="header-container">
-      <img src="images/logo-efrei.png" alt="EFREI Logo" class="logo" />
-      <div class="title-nav">
-        <h1>EFREI Computer Science Dept</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="team.html">Teachers</a></li>
-            <li><a href="permanences.html">Schedules</a></li>
-            <li><a href="courses.html">Courses</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <!-- Le contenu de ta page ira ici -->
-
-  <main>
-    <section id="hero-carousel">
-      <div class="carousel-container">
-        <div class="carousel-slide active">
-          <img src="images/campus1.jpg" alt="EFREI Campus" />
-          <div class="carousel-text">
-            <h2>Welcome to the IT Department</h2>
-            <p>
-              Digital excellence at the heart of Efrei Paris Panthéon-Assas.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/campus2.jpg" alt="Student Life" />
-          <div class="carousel-text">
-            <h2>Innovation & Research</h2>
-            <p>Discover our state-of-the-art laboratories.</p>
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img src="images/campus3.jpg" alt="International" />
-          <div class="carousel-text">
-            <h2>International Focus</h2>
-            <p>Preparing engineers for a global career.</p>
-          </div>
+  <body>
+    <header>
+      <div class="header-container">
+        <img src="images/logo-efrei.png" alt="EFREI Logo" class="logo" />
+        <div class="title-nav">
+          <h1>EFREI Computer Science Dept</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="team.html">Teachers</a></li>
+              <li><a href="permanences.html">Schedules</a></li>
+              <li><a href="courses.html">Courses</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <div class="carousel-controls">
-        <button id="prevBtn" aria-label="Previous">&#10094;</button>
-        <button id="nextBtn" aria-label="Next">&#10095;</button>
-      </div>
-    </section>
+    </header>
 
-    <div class="faculty-page">
-      <aside class="filters-sidebar">
-        <h3>Filter by specialty</h3>
-        <ul id="filter-list">
-          <li>
-            <button class="filter-btn active" data-filter="all">
-              All Specialties
-            </button>
-          </li>
-          <li>
-            <button class="filter-btn" data-filter="web">
-              Web Development
-            </button>
-          </li>
-          <li>
-            <button class="filter-btn" data-filter="ai">
-              Artificial Intelligence
-            </button>
-          </li>
-          <li>
-            <button class="filter-btn" data-filter="cyber">
-              Cybersecurity
-            </button>
-          </li>
-        </ul>
-      </aside>
+    <!-- Le contenu de ta page ira ici -->
 
-      <section class="faculty-grid" id="faculty-grid">
-        <article class="prof-card" data-category="web">
-          <div class="prof-img"></div>
-          <h3>Mohamed Hamidi</h3>
-          <p class="specialty">Web Development</p>
-          <p>Module leader for TI402 Project.</p>
-        </article>
-
-        <article class="prof-card" data-category="ai">
-          <div class="prof-img"></div>
-          <h3>Sarah Connor</h3>
-          <p class="specialty">Artificial Intelligence</p>
-          <p>Specialist in Neural Networks and Machine Learning.</p>
-        </article>
-
-        <article class="prof-card" data-category="cyber">
-          <div class="prof-img"></div>
-          <h3>Alan Turing</h3>
-          <p class="specialty">Cybersecurity</p>
-          <p>Expert in Cryptography and Systems Security.</p>
-        </article>
-
-        <article class="prof-card" data-category="web">
-          <div class="prof-img"></div>
-          <h3>Ada Lovelace</h3>
-          <p class="specialty">Web Development</p>
-          <p>Fullstack Engineer and Algorithm specialist.</p>
-        </article>
+    <main>
+      <section id="hero-carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img src="images/campus1.jpg" alt="EFREI Campus" />
+            <div class="carousel-text">
+              <h2>Welcome to the IT Department</h2>
+              <p>
+                Digital excellence at the heart of Efrei Paris Panthéon-Assas.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/campus2.jpg" alt="Student Life" />
+            <div class="carousel-text">
+              <h2>Innovation & Research</h2>
+              <p>Discover our state-of-the-art laboratories.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/campus3.jpg" alt="International" />
+            <div class="carousel-text">
+              <h2>International Focus</h2>
+              <p>Preparing engineers for a global career.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button id="prevBtn" aria-label="Previous">&#10094;</button>
+          <button id="nextBtn" aria-label="Next">&#10095;</button>
+        </div>
       </section>
-    </div>
-  </main>
 
-  <!-- Footer commun -->
-  <footer>
-      <div class="footer-nav" style="margin-bottom: 10px;">
-        <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Home</a>
-        <a href="about_us.html" style="color: white; margin: 0 10px; text-decoration: none;">About us</a>
+      <div class="faculty-page">
+        <aside class="filters-sidebar">
+          <h3>Filter by specialty</h3>
+          <ul id="filter-list">
+            <li>
+              <button class="filter-btn active" data-filter="all">
+                All Specialties
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="web">
+                Web Development
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="algo">
+                Algorithms & Python
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="cyber">
+                Cybersecurity
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="ai">
+                Artificial Intelligence
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="data">
+                Database Management
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="network">
+                Networks & Systems
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="poo">Java / OOP</button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="cloud">
+                Cloud & DevOps
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <section class="faculty-grid" id="faculty-grid">
+          <article class="prof-card" data-category="web">
+            <div class="prof-img">
+              <img
+                src="images/prof-img.jpg"
+                alt="Prof Web"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+              />
+            </div>
+            <h3>Didier Dupont</h3>
+            <p class="specialty">Web Development</p>
+            <p>
+              Expert en HTML/CSS et JavaScript moderne. Responsable du module
+              TI402.
+            </p>
+          </article>
+
+          <article class="prof-card" data-category="algo">
+            <div class="prof-img">
+              <img
+                src="images/prof-img.jpg"
+                alt="Prof Algo"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+              />
+            </div>
+            <h3>Jean-Louis Bertrand</h3>
+            <p class="specialty">Algorithms & Python</p>
+            <p>
+              Spécialiste en complexité algorithmique et structures de données
+              avancées.
+            </p>
+          </article>
+
+          <article class="prof-card" data-category="cyber">
+            <div class="prof-img">
+              <img
+                src="images/prof-img.jpg"
+                alt="Prof Cyber"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+              />
+            </div>
+            <h3>Claire Valois</h3>
+            <p class="specialty">Cybersecurity</p>
+            <p>
+              Experte en cryptographie, pentesting et sécurité des
+              infrastructures réseaux.
+            </p>
+          </article>
+
+          <article class="prof-card" data-category="ai">
+            <div class="prof-img">
+              <img
+                src="images/prof-img.jpg"
+                alt="Prof AI"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+              />
+            </div>
+            <h3>Marc Desmet</h3>
+            <p class="specialty">Artificial Intelligence</p>
+            <p>
+              Chercheur en Deep Learning et traitement automatique du langage
+              naturel (NLP).
+            </p>
+          </article>
+
+          <article class="prof-card" data-category="data">
+            <div class="prof-img">
+              <img
+                src="images/prof-img.jpg"
+                alt="Prof DB"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+              />
+            </div>
+            <h3>Sophie Lefebvre</h3>
+            <p class="specialty">Database Management</p>
+            <p>
+              Spécialiste SQL et NoSQL pour les architectures de données
+              massives.
+            </p>
+          </article>
+
+          <article class="prof-card" data-category="network">
+            <div class="prof-img">
+              <img
+                src="images/prof-img.jpg"
+                alt="Prof Network"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+              />
+            </div>
+            <h3>Alain Rivière</h3>
+            <p class="specialty">Networks & Linux</p>
+            <p>
+              Administration système Linux et protocoles de communication
+              TCP/IP.
+            </p>
+          </article>
+
+          <article class="prof-card" data-category="poo">
+            <div class="prof-img">
+              <img
+                src="images/prof-img.jpg"
+                alt="Prof Java"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+              />
+            </div>
+            <h3>Thomas Meyer</h3>
+            <p class="specialty">Java Programming (POO)</p>
+            <p>
+              Expert en architecture logicielle et programmation orientée objet.
+            </p>
+          </article>
+
+          <article class="prof-card" data-category="cloud">
+            <div class="prof-img">
+              <img
+                src="images/prof-img.jpg"
+                alt="Prof Cloud"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+              />
+            </div>
+            <h3>Lucie Morel</h3>
+            <p class="specialty">Cloud Computing & DevOps</p>
+            <p>
+              Spécialiste AWS/Azure et automatisation des déploiements (CI/CD).
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer commun -->
+    <footer>
+      <div class="footer-nav" style="margin-bottom: 10px">
+        <a
+          href="index.html"
+          style="color: white; margin: 0 10px; text-decoration: none"
+          >Home</a
+        >
+        <a
+          href="about_us.html"
+          style="color: white; margin: 0 10px; text-decoration: none"
+          >About us</a
+        >
       </div>
       <p>&copy; 2026 - Projet Web TI402 - Group Johannel-Rubem</p>
     </footer>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
+>

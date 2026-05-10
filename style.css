@@ -152,11 +152,16 @@ header nav ul li a {
 .faculty-grid {
   flex: 3;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, 380px);
   gap: 25px;
+  justify-content: center;
+  align-items: start;
 }
 
 .prof-card {
+  width: 380px;
+  min-height: 360px;
+  box-sizing: border-box;
   background: white;
   border: 1px solid #eee;
   padding: 25px;
@@ -167,7 +172,6 @@ header nav ul li a {
     transform 0.3s ease,
     opacity 0.4s ease-in-out;
 }
-
 .prof-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -590,5 +594,15 @@ textarea {
 
   .program-block {
     padding: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prof-card {
+    width: 100%;
   }
 }

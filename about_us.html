@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EFREI IT Dept</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <div class="header-container">
+        <img src="images/logo-efrei.png" alt="EFREI Logo" class="logo" />
+        <div class="title-nav">
+          <h1>EFREI Computer Science Dept</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="team.html">Teachers</a></li>
+              <li><a href="permanences.html">Schedules</a></li>
+              <li><a href="courses.html">Courses</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>The Development Team</h2>
+            <div class="articles-grid"> <article class="news-card" style="padding: 20px; text-align: center;">
+                    <h3>Adrian Rubem</h3>
+                    <p>Backend Developer & UI Designer</p>
+                    <p>Étudiant à l'EFREI Paris.</p>
+                </article>
+                <article class="news-card" style="padding: 20px; text-align: center;">
+                    <h3>Alexandre Johannel</h3>
+                    <p>Lead Developer & QA Engineer</p>
+                    <p>Étudiant à l'EFREI Paris.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="email">Votre Email EFREI :</label>
+                    <input type="email" id="email" name="email" placeholder="prenom.nom@efrei.net" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet :</label>
+                    <select id="subject" name="subject">
+                        <option value="general">Information générale</option>
+                        <option value="bug">Signaler un bug</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="filter-btn active">Envoyer le message</button>
+                <p id="formFeedback" style="margin-top: 15px;"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-nav" style="margin-bottom: 10px;">
+        <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Home</a>
+        <a href="about_us.html" style="color: white; margin: 0 10px; text-decoration: none;">About us</a>
+      </div>
+      <p>&copy; 2026 - Projet Web TI402 - Group Johannel-Rubem</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

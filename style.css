@@ -523,3 +523,66 @@ textarea {
   text-align: center;
   font-weight: 600;
 }
+
+.programs-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.programs-section h2 {
+  text-align: center;
+  color: #003366;
+  font-size: 2.3rem;
+  margin-bottom: 45px;
+}
+
+.program-block {
+  background: white;
+  padding: 35px;
+  margin-bottom: 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.program-block h3 {
+  color: #003366;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.program-block p {
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.program-block ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 22px;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.program-block li {
+  background: #f2f6fb;
+  padding: 14px 16px;
+  border-radius: 10px;
+  line-height: 1.5;
+  border-left: 4px solid #003366;
+}
+
+@media screen and (max-width: 700px) {
+  .program-block ul {
+    grid-template-columns: 1fr;
+  }
+
+  .program-block {
+    padding: 25px;
+  }
+}
